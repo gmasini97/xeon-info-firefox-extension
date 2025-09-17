@@ -1,7 +1,7 @@
 const cpu_fmt = (name) => name.replace('-', '').replace(' ', '').toLowerCase()
 
 function do_cpu_replace() {
-	const regex = /(gold|platinum|silver|bronze|.\d?)[ -]?\d{4}[^\s]?(\s?v\d)?/gi
+	const regex = /(gold|platinum|silver|bronze|.\d?)[ -]?\d{4}[a-z]?(\s?v\d)?/gi
 
 	function build_elements(defs) {
 		const element = document.createElement('span')
