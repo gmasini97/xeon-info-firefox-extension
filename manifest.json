@@ -1,0 +1,18 @@
+{
+  "manifest_version": 2,
+  "name": "Xeon name info",
+  "version": "1.0",
+
+  "description": "This extension adds info to the name of Xeon processors in a webpage",
+
+  "icons": {
+    "48": "i-48.png"
+  },
+
+  "content_scripts": [
+    {
+      "matches": ["*://*/*"],
+      "js": ["data.js", "index.js"]
+    }
+  ]
+}
